@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<header id="header"></header>
+    <section id="calculadora">
+
+        <h1>Calculadora!</h1>
+
+        <label for="num1">numero 1
+        </label>
+        <input type="number" id="num1" placeholder="ingresa un numero...">
+        <label for="num2">numero 2
+        </label>
+        <input type="number" id="num2" placeholder="ingresa un numero...">
+        <label for="operacion">operación</label>
+        <select name="operacion" id="operacion">
+            <option value="suma">suma</option>
+            <option value="resta">resta</option>
+            <option value="multiplicacion">multiplicacion</option>
+            <option value="division">division</option>
+        </select>
+        <button id="calcular">Calcular</button>
+
+        <p id="resultado">Resultado: </p>
+
+    </section>
+    <section id="frases">
+
+        <h2>Generador de Frases</h2>
+        <button id="generar">Generar Frase</button>
+        <p id="frase">Haz clic en el botón para ver una frase.</p>
+    </section>
+    <br>
+<section id="tarea">
+
+    <h2> crea una tarea! </h2>
+    <input type="text" id="tareaInput" placeholder="Ingresa la nueva tarea...">
+    <button id="agregarTarea"><i class="fi fi-rr-add"></i></button>
+    <ul id="listaTareas"></ul>
+</section>
+<section id="cards"></section>
+    <h2>Crea una card!</h2>
+    <input type="text" id="nombre" placeholder="Ingresa la nueva tarea..." required>
+    <input type="text" id="edad" placeholder="Ingresa la nueva tarea..." required>
+    <textarea id="descripcion" placeholder="Descripción"></textarea>
+
+    <button id="agregarCard"><i class="fi fi-rr-add"></i></button>
+    <div id="container"></div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
